@@ -42,29 +42,35 @@ public class ColorChooserView extends JPanel {
         // Initialize color buttons
         initializeColorButtons();
 
+        Border blackline = BorderFactory.createRaisedBevelBorder();
+
         primaryColor = new JButton("");
         primaryColor.setPreferredSize(new Dimension(25, 25));
         primaryColor.setOpaque(true);
         primaryColor.setFocusPainted(false);
         primaryColor.setBackground(Color.black);
+        primaryColor.setBorder(blackline);
 
         custom2 = new JButton("");
         custom2.setPreferredSize(new Dimension(25, 25));
         custom2.setOpaque(true);
         custom2.setFocusPainted(false);
         custom2.setBackground(Color.white);
+        custom2.setBorder(blackline);
 
         custom3 = new JButton("");
         custom3.setPreferredSize(new Dimension(25, 25));
         custom3.setOpaque(true);
         custom3.setFocusPainted(false);
         custom3.setBackground(Color.white);
+        custom3.setBorder(blackline);
 
         secondaryColor = new JButton("");
         secondaryColor.setPreferredSize(new Dimension(25, 25));
         secondaryColor.setOpaque(true);
         secondaryColor.setFocusPainted(false);
         secondaryColor.setBackground(Color.white);
+        secondaryColor.setBorder(blackline);
 
         newColor = new JButton("Edit Color");
 
@@ -96,13 +102,13 @@ public class ColorChooserView extends JPanel {
         colorButtons = new JButton[20];
         Border blackline = BorderFactory.createRaisedBevelBorder();
         Color[] colors = new Color[] {
-            new Color(26, 188, 156), new Color(46, 204, 113), new Color(52, 152, 219),
-            new Color(155, 89, 182), new Color(52, 73, 94), new Color(22, 160, 133),
-            new Color(39, 174, 96), new Color(41, 128, 185), new Color(142, 68, 173),
-            new Color(44, 62, 80), new Color(241, 196, 15), new Color(230, 126, 34),
-            new Color(231, 76, 60), new Color(236, 240, 241), new Color(149, 165, 166),
-            new Color(243, 156, 18), new Color(211, 84, 0), new Color(192, 57, 43),
-            new Color(189, 195, 199), new Color(127, 140, 141)
+                new Color(26, 188, 156), new Color(46, 204, 113), new Color(52, 152, 219),
+                new Color(155, 89, 182), new Color(52, 73, 94), new Color(22, 160, 133),
+                new Color(39, 174, 96), new Color(41, 128, 185), new Color(142, 68, 173),
+                new Color(44, 62, 80), new Color(241, 196, 15), new Color(230, 126, 34),
+                new Color(231, 76, 60), new Color(236, 240, 241), new Color(149, 165, 166),
+                new Color(243, 156, 18), new Color(211, 84, 0), new Color(192, 57, 43),
+                new Color(189, 195, 199), new Color(127, 140, 141)
         };
 
         for (int i = 0; i < colors.length; i++) {
@@ -157,6 +163,6 @@ public class ColorChooserView extends JPanel {
     }
 
     public JToolBar getToolBar() {
-		return this.panel;
-	}
+        return this.panel;
+    }
 }
