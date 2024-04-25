@@ -3,7 +3,8 @@
 Features include opening & saving images, free-hand drawing, insertion of images, text, shapes and more.
 
 ## Preview (to be updated):
-<img src="http://i.imgur.com/eRWLGvu.jpg">
+![image](https://github.com/zaki-1337/brushify-java-paint-clone/assets/107113588/2d6664dc-7f57-40af-93c2-f58108081d87)
+
 
 ## How to run:
 - Download the project and run /src/Draw.java
