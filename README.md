@@ -15,6 +15,3 @@ Used https://github.com/azkevin/swing-drawing-app as base. Changes include refac
 
 Updated by:
 - Adnan Zaki
-- Manas Gowda
-- Naitik Jain
-- Saketh Vunka
